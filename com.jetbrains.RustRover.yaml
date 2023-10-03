@@ -138,7 +138,7 @@ modules:
         only-arches:
           - aarch64
         sha256: 15b9f046a11604eafd8dda48dcbc6e08fd60f1d71313e28fe590b6ab2556317b
-        url:https://download.jetbrains.com/rustrover/RustRover-232.9921.62-aarch64.tar.gz
+        url: https://download.jetbrains.com/rustrover/RustRover-232.9921.62-aarch64.tar.gz
         x-checker-data:
           code: RRC
           is-main-source: true
