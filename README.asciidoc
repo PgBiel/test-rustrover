@@ -1,5 +1,7 @@
-= JetBrains IntelliJ IDEA Community
+= JetBrains RustRover (not IntelliJ IDEA Community)
 :uri-idea-home: https://www.jetbrains.com/idea/
+
+*Note: overridden for RustRover*
 
 {uri-idea-home}[IntelliJ IDEA Community^] is a fully-fledged commercial IDE for the JVM platform.
 

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=Development;IDE;
+Exec=rustrover
+GenericName=A powerful IDE for Rust
+Icon=com.jetbrains.RustRover
+Keywords=development;ide;rustrover;rust;
+Name=IntelliJ RustRover
+StartupNotify=true
+StartupWMClass=jetbrains-rustrover
+Terminal=false
+Type=Application

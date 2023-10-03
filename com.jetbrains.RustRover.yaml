@@ -1,6 +1,6 @@
-app-id: com.jetbrains.IntelliJ-IDEA-Community
+app-id: com.jetbrains.RustRover
 
-command: idea
+command: rustrover
 
 finish-args:
   - --allow=devel
@@ -53,9 +53,9 @@ modules:
   - name: jetbrains-flatpak-wrapper
     buildsystem: meson
     config-opts:
-      - -Deditor_binary=/app/IDEA-C/bin/idea.sh
-      - -Deditor_title=IntelliJ IDEA Community
-      - -Dprogram_name=idea
+      - -Deditor_binary=/app/RustRover/bin/rustrover.sh
+      - -Deditor_title=RustRover
+      - -Dprogram_name=rustrover
     sources:
       - type: git
         commit: 5a054811ab2144ceaf343169b240a70eeb4dfb47
@@ -117,40 +117,40 @@ modules:
   #
   # -----------------------------------------------------------------------------------------------
 
-  - name: idea
+  - name: rustrover
     buildsystem: simple
     build-commands:
-      - install --directory --mode 0755 /app/IDEA-C/
-      - tar --directory /app/IDEA-C/ --extract --file ideaIC.tar.gz --gunzip --strip-components 1
+      - install --directory --mode 0755 /app/RustRover/
+      - tar --directory /app/RustRover/ --extract --file rustrover.tar.gz --gunzip --strip-components 1
       - install -D --mode 0644 --target-directory /app/bin/ idea.properties
       - install -D --mode 0644 --target-directory /app/share/applications/ ${FLATPAK_ID}.desktop
       - install -D --mode 0644 --target-directory /app/share/metainfo/ ${FLATPAK_ID}.metainfo.xml
-      - install -D --mode 0644 /app/IDEA-C/bin/idea.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
+      - install -D --mode 0644 /app/RustRover/bin/rustrover.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
     sources:
       - type: file
-        path: com.jetbrains.IntelliJ-IDEA-Community.desktop
+        path: com.jetbrains.RustRover.desktop
       - type: file
-        path: com.jetbrains.IntelliJ-IDEA-Community.metainfo.xml
+        path: com.jetbrains.RustRover.metainfo.xml
       - type: file
         path: idea.properties
       - type: file
-        dest-filename: ideaIC.tar.gz
+        dest-filename: rustrover.tar.gz
         only-arches:
           - aarch64
         sha256: 15b9f046a11604eafd8dda48dcbc6e08fd60f1d71313e28fe590b6ab2556317b
-        url: https://download.jetbrains.com/idea/ideaIC-2023.2.2-aarch64.tar.gz
+        url:https://download.jetbrains.com/rustrover/RustRover-232.9921.62-aarch64.tar.gz
         x-checker-data:
-          code: IIC
+          code: RRC
           is-main-source: true
           type: jetbrains
       - type: file
-        dest-filename: ideaIC.tar.gz
+        dest-filename: rustrover.tar.gz
         only-arches:
           - x86_64
         sha256: cf647137394e27b3011072e463dc2e4bcdd54dc6ea9406e487a47648fc77bd26
-        url: https://download.jetbrains.com/idea/ideaIC-2023.2.2.tar.gz
+        url: https://download.jetbrains.com/rustrover/RustRover-232.9921.62.tar.gz
         x-checker-data:
-          code: IIC
+          code: RRC
           is-main-source: true
           type: jetbrains
 
