@@ -137,7 +137,7 @@ modules:
         dest-filename: rustrover.tar.gz
         only-arches:
           - aarch64
-        sha256: 15b9f046a11604eafd8dda48dcbc6e08fd60f1d71313e28fe590b6ab2556317b
+        sha256: fca556502e9a532ee4ad7a3c0a470377f9f4ecb7d9b7d8311467a107b29fc868
         url: https://download.jetbrains.com/rustrover/RustRover-232.9921.62-aarch64.tar.gz
         x-checker-data:
           code: RRC
@@ -147,7 +147,7 @@ modules:
         dest-filename: rustrover.tar.gz
         only-arches:
           - x86_64
-        sha256: cf647137394e27b3011072e463dc2e4bcdd54dc6ea9406e487a47648fc77bd26
+        sha256: 1f67e1a82f5cbb7c84382c7f251ae06b1e2699fa7d2fa4129e23ec2e43251687
         url: https://download.jetbrains.com/rustrover/RustRover-232.9921.62.tar.gz
         x-checker-data:
           code: RRC
